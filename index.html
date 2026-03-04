@@ -1,536 +1,164 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Prompts — 31 Reels Estratégicos</title>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --preto: #f5f0e8;
-    --escuro: #ede6d8;
-    --card: #faf6ef;
-    --borda: #ddd4c0;
-    --borda-hover: #c9b99a;
-    --dourado: #6b3f1f;
-    --dourado-claro: #8b5530;
-    --branco: #3a2010;
-    --cinza: #7a6555;
-    --cinza-claro: #a08870;
-    --verde: #25D366;
-  }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrategista Digital Letal - Instagram 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+```
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #0C0804;
+        background-image:
+            radial-gradient(ellipse at 50% 20%, rgba(90, 60, 15, 0.18) 0%, transparent 55%),
+            radial-gradient(ellipse at 50% 70%, rgba(50, 30, 8, 0.15) 0%, transparent 50%),
+            radial-gradient(circle at 50% 50%, rgba(30, 18, 5, 0.3) 0%, #0C0804 70%);
+        padding: 32px 20px;
+        font-family: 'Orbitron', monospace;
+        overflow-x: hidden;
+    }
 
-  body {
-    background: linear-gradient(145deg, #f7f1e6 0%, #ede4d0 50%, #e8dcc8 100%);
-    font-family: 'DM Sans', sans-serif;
-    color: var(--branco);
-    min-height: 100vh;
-    overflow-x: hidden;
-  }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        max-width: 480px;
+        width: 100%;
+    }
 
-  /* GRAIN OVERLAY */
-  body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-    pointer-events: none;
-    z-index: 0;
-    opacity: 0.15;
-  }
+    /* Logo/Imagem */
+    .logo-space {
+        width: 100%;
+        max-width: 420px;
+    }
 
-  .wrapper {
-    max-width: 780px;
-    margin: 0 auto;
-    padding: 0 24px 80px;
-    position: relative;
-    z-index: 1;
-  }
+    .logo-space img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
 
-  /* HERO */
-  .hero {
-    padding: 72px 0 56px;
-    border-bottom: 1px solid var(--borda);
-    margin-bottom: 56px;
-  }
+    /* Botão preto com texto dourado metalizado */
+    .cta-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 420px;
+        padding: 22px 32px;
+        background: #0A0806;
+        border: 1px solid rgba(180, 140, 60, 0.35);
+        border-radius: 0;
+        cursor: pointer;
+        text-decoration: none;
+        font-family: 'Orbitron', monospace;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1.4;
+        color: #C8A35A;
+        background-image: linear-gradient(135deg, #8A6A2A, #B8943A, #E8D08A, #D4B05A, #8A6A2A);
+        background-size: 300% auto;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        transition: all 0.4s ease;
+        animation: goldShimmer 4s ease-in-out infinite;
+    }
 
-  .hero-tag {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: rgba(107,63,31,0.08);
-    border: 1px solid rgba(107,63,31,0.2);
-    border-radius: 100px;
-    padding: 6px 14px;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--dourado);
-    margin-bottom: 28px;
-  }
+    .cta-btn::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: #0A0806;
+        z-index: -1;
+    }
 
-  .hero-tag::before {
-    content: '';
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: #6b3f1f;
-    animation: pulse 2s infinite;
-  }
+    .cta-btn::after {
+        content: '';
+        position: absolute;
+        inset: -1px;
+        background: linear-gradient(
+            135deg,
+            rgba(138, 106, 42, 0.3),
+            rgba(200, 163, 90, 0.15),
+            rgba(232, 208, 138, 0.25),
+            rgba(200, 163, 90, 0.15),
+            rgba(138, 106, 42, 0.3)
+        );
+        z-index: -2;
+    }
 
-  @keyframes pulse {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.15; transform: scale(0.8); }
-  }
+    .cta-btn:hover {
+        transform: translateY(-2px);
+        border-color: rgba(200, 163, 90, 0.6);
+        box-shadow:
+            0 4px 24px rgba(180, 140, 60, 0.12),
+            0 0 48px rgba(180, 140, 60, 0.06);
+    }
 
-  .hero h1 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(48px, 8vw, 80px);
-    letter-spacing: 3px;
-    line-height: 0.95;
-    color: var(--branco);
-    margin-bottom: 8px;
-  }
+    .cta-btn:active {
+        transform: translateY(0);
+    }
 
-  .hero h1 span {
-    color: #6b3f1f;
-    display: block;
-  }
+    @keyframes goldShimmer {
+        0%, 100% { background-position: 0% center; }
+        50% { background-position: 300% center; }
+    }
 
-  .hero-desc {
-    font-size: 15px;
-    color: var(--cinza);
-    line-height: 1.7;
-    max-width: 520px;
-    margin-top: 20px;
-    font-weight: 300;
-  }
+    @media (max-width: 480px) {
+        body {
+            padding: 24px 16px;
+        }
 
-  .hero-desc strong {
-    color: var(--branco);
-    font-weight: 500;
-  }
+        .container {
+            gap: 32px;
+        }
 
-  /* INSTRUÇÃO */
-  .instrucao {
-    background: rgba(107,63,31,0.05);
-    border: 1px solid rgba(107,63,31,0.15);
-    border-left: 3px solid #6b3f1f;
-    border-radius: 0 10px 10px 0;
-    padding: 16px 20px;
-    margin-bottom: 48px;
-    font-size: 13px;
-    color: var(--cinza);
-    line-height: 1.6;
-  }
+        .logo-space {
+            max-width: 360px;
+        }
 
-  .instrucao strong {
-    color: var(--dourado);
-    font-weight: 600;
-  }
-
-  /* BLOCO PROMPT */
-  .prompt-bloco {
-    margin-bottom: 40px;
-    animation: fadeUp 0.5s ease both;
-  }
-
-  .prompt-bloco:nth-child(2) { animation-delay: 0.1s; }
-  .prompt-bloco:nth-child(3) { animation-delay: 0.2s; }
-
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  .prompt-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 12px;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-
-  .prompt-numero {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-
-  .num-badge {
-    width: 32px;
-    height: 32px;
-    border-radius: 8px;
-    background: var(--dourado);
-    color: #f5f0e8;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 18px;
-    letter-spacing: 1px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-  }
-
-  .prompt-titulo {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 22px;
-    letter-spacing: 2px;
-    color: var(--branco);
-  }
-
-  .prompt-subtitulo {
-    font-size: 12px;
-    color: var(--cinza);
-    font-weight: 400;
-    margin-top: 2px;
-    letter-spacing: 0.5px;
-  }
-
-  /* CAIXA PROMPT */
-  .prompt-caixa {
-    background: rgba(255,252,245,0.85);
-    border: 1px solid var(--borda);
-    border-radius: 12px;
-    overflow: hidden;
-    transition: border-color 0.2s;
-    box-shadow: 0 8px 32px rgba(107,63,31,0.08), 0 2px 8px rgba(107,63,31,0.05);
-    backdrop-filter: blur(10px);
-  }
-
-  .prompt-caixa:hover {
-    border-color: var(--borda-hover);
-  }
-
-  .prompt-toolbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 16px;
-    border-bottom: 1px solid var(--borda);
-    background: #e8dcc8;
-  }
-
-  .toolbar-dots {
-    display: flex;
-    gap: 6px;
-  }
-
-  .toolbar-dots span {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #c9b99a;
-  }
-
-  .toolbar-dots span:first-child { background: #ff5f57; }
-  .toolbar-dots span:nth-child(2) { background: #febc2e; }
-  .toolbar-dots span:nth-child(3) { background: #28c840; }
-
-  .toolbar-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 11px;
-    color: var(--cinza-claro);
-    letter-spacing: 1px;
-  }
-
-  .btn-copiar {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    background: rgba(107,63,31,0.08);
-    border: 1px solid rgba(107,63,31,0.2);
-    border-radius: 6px;
-    padding: 5px 12px;
-    color: var(--dourado);
-    font-family: 'DM Sans', sans-serif;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    cursor: pointer;
-    transition: all 0.2s;
-    white-space: nowrap;
-  }
-
-  .btn-copiar:hover {
-    background: rgba(107,63,31,0.15);
-    border-color: rgba(107,63,31,0.35);
-    transform: translateY(-1px);
-  }
-
-  .btn-copiar.copiado {
-    background: rgba(37,150,80,0.1);
-    border-color: rgba(37,150,80,0.3);
-    color: #1a7a40;
-  }
-
-  .btn-copiar svg {
-    width: 13px;
-    height: 13px;
-    flex-shrink: 0;
-  }
-
-  .prompt-texto {
-    font-family: 'DM Mono', monospace;
-    font-size: 13px;
-    line-height: 1.8;
-    color: #4a3020;
-    padding: 20px 20px;
-    white-space: pre-wrap;
-    word-break: break-word;
-    max-height: 420px;
-    overflow-y: auto;
-    scrollbar-width: thin;
-    scrollbar-color: #c9b99a transparent;
-  }
-
-  .prompt-texto::-webkit-scrollbar { width: 4px; }
-  .prompt-texto::-webkit-scrollbar-track { background: transparent; }
-  .prompt-texto::-webkit-scrollbar-thumb { background: var(--borda); border-radius: 2px; }
-
-  /* Highlight especial */
-  .prompt-texto .hl-dourado { color: var(--dourado); font-weight: 500; }
-  .prompt-texto .hl-branco { color: var(--branco); font-weight: 500; }
-
-  /* DICA */
-  .dica-box {
-    background: rgba(255,252,245,0.85);
-    box-shadow: 0 8px 32px rgba(107,63,31,0.08);
-    backdrop-filter: blur(10px);
-    border: 1px solid var(--borda);
-    border-radius: 12px;
-    padding: 24px;
-    margin-top: 48px;
-  }
-
-  .dica-titulo {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 20px;
-    letter-spacing: 2px;
-    color: var(--dourado);
-    margin-bottom: 16px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .dica-lista {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .dica-lista li {
-    font-size: 13px;
-    color: var(--cinza);
-    line-height: 1.6;
-    padding-left: 16px;
-    position: relative;
-  }
-
-  .dica-lista li::before {
-    content: '→';
-    position: absolute;
-    left: 0;
-    color: var(--dourado);
-    font-weight: 600;
-  }
-
-  .dica-lista li strong {
-    color: var(--branco);
-  }
-
-  /* FOOTER */
-  .footer {
-    margin-top: 64px;
-    padding-top: 32px;
-    border-top: 1px solid var(--borda);
-    text-align: center;
-    font-size: 12px;
-    color: var(--cinza-claro);
-    letter-spacing: 1px;
-  }
-
-  .footer span {
-    color: var(--dourado);
-  }
-
-  /* RESPONSIVO */
-  @media (max-width: 480px) {
-    .wrapper { padding: 0 16px 60px; }
-    .hero { padding: 48px 0 40px; }
-    .prompt-texto { font-size: 12px; max-height: 320px; }
-  }
+        .cta-btn {
+            max-width: 360px;
+            padding: 20px 24px;
+            font-size: 11px;
+            letter-spacing: 2px;
+        }
+    }
 </style>
+```
+
 </head>
 <body>
 
-<div class="wrapper">
-
-  <!-- HERO -->
-  <div class="hero">
-    <div class="hero-tag">Instagram 2026</div>
-    <h1>31 Reels<span>Estratégicos</span></h1>
-    <p class="hero-desc">
-      Dois comandos em sequência para gerar um <strong>calendário completo de Reels</strong> com foco em retenção, utilidade real e Social SEO (Pesquisa Social).
-    </p>
-  </div>
-
-  <!-- INSTRUÇÃO -->
-  <div class="instrucao">
-    <strong>Como usar:</strong> Cole o Comando 01 na IA e preencha os campos entre colchetes com as informações do seu negócio. Após a resposta, cole o Comando 02 para receber os 31 roteiros estruturados.
-  </div>
-
-  <!-- PROMPT 1 -->
-  <div class="prompt-bloco">
-    <div class="prompt-header">
-      <div class="prompt-numero">
-        <div class="num-badge">1</div>
-        <div>
-          <div class="prompt-titulo">Comando 01</div>
-          <div class="prompt-subtitulo">Cole e preencha os campos com seu negócio</div>
-        </div>
-      </div>
+```
+<div class="container">
+    <div class="logo-space">
+        <img src="logo.png" alt="Estrategista Digital Letal - Especialista no Novo Algoritmo do Instagram 2026">
     </div>
 
-    <div class="prompt-caixa">
-      <div class="prompt-toolbar">
-        <div class="toolbar-dots">
-          <span></span><span></span><span></span>
-        </div>
-        <span class="toolbar-label">PROMPT</span>
-        <button class="btn-copiar" onclick="copiar(this, 'prompt1')">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/>
-          </svg>
-          Copiar
-        </button>
-      </div>
-      <div class="prompt-texto" id="prompt1">Você é meu estrategista de Instagram (2026). Crie um calendário de 31 Reels com foco em:
-* retenção (watch time/tempo de visualização),
-* utilidade real (saves/salvamentos e shares/compartilhamentos),
-* e Social SEO (palavras-chave que meu público pesquisaria).
-
-1. Meu nicho: [cole aqui]
-2. Meu público: [cole aqui]
-3. Meu produto/serviço: [cole aqui]
-4. Meu diferencial (o que eu faço diferente): [cole aqui]
-5. 7 dores do público (curtas): [liste]
-6. 7 desejos do público (curtos): [liste]
-
-Após a resposta da IA você dá o segundo comando.</div>
-    </div>
-  </div>
-
-  <!-- PROMPT 2 -->
-  <div class="prompt-bloco">
-    <div class="prompt-header">
-      <div class="prompt-numero">
-        <div class="num-badge">2</div>
-        <div>
-          <div class="prompt-titulo">Comando 02</div>
-          <div class="prompt-subtitulo">Cole após receber a resposta do Comando 01</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="prompt-caixa">
-      <div class="prompt-toolbar">
-        <div class="toolbar-dots">
-          <span></span><span></span><span></span>
-        </div>
-        <span class="toolbar-label">PROMPT</span>
-        <button class="btn-copiar" onclick="copiar(this, 'prompt2')">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/>
-          </svg>
-          Copiar
-        </button>
-      </div>
-      <div class="prompt-texto" id="prompt2">Agora gere:
-
-A) 31 ideias (1 por dia) distribuídas em 4 funções:
-* Descoberta (8)
-* Consideração/Prova (8)
-* Conversão (8)
-* Comunidade/Autoridade (7)
-
-Para CADA ideia, entregue no formato:
-1. Título (até 8 palavras)
-2. Gancho (12–18 palavras, curiosidade ou tensão)
-3. Promessa (o que a pessoa ganha em 15–30s)
-4. 3 pontos de desenvolvimento (frases curtas)
-5. Prova/credencial (exemplo, dado, mini-caso — sem inventar números)
-6. Palavra-chave principal + 3 variações (SEO social)
-7. CTA natural (comentar/salvar/seguir — sem forçar)
-
-Depois, pergunte: "Você aprova esses 31 temas?"
-
-Se eu disser SIM: crie o roteiro do Reel #1 usando esta estrutura de 7 blocos:
-
-B1 Hook (impacto)
-B2 Contexto (tensão)
-B3 Insight 1 (abertura de loop/loop aberto)
-B4 Insight 2 (core)
-B5 Exemplo rápido (prova)
-B6 Passo prático (como aplicar hoje)
-B7 CTA suave (1 ação)
-
-IMPORTANTE:
-* Linguagem conversacional.
-* Sem clichês e sem copiar frases prontas.
-* Sempre inclua 1 frase de "ponte" (bucket brigade/ponte) entre blocos.</div>
-    </div>
-  </div>
-
-  <!-- DICA DE OURO -->
-  <div class="dica-box">
-    <div class="dica-titulo">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F5A800" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-      Dica de Ouro
-    </div>
-    <ul class="dica-lista">
-      <li>Use <strong>exemplos do seu mundo real</strong> — caso de cliente, bastidor, erro comum do seu nicho.</li>
-      <li>Inclua <strong>palavras-chave do seu público</strong> (SEO social) — isso te diferencia automaticamente.</li>
-      <li>Faça <strong>"um por vez"</strong> — 31 ganchos → aprova → roteiro #1 → roteiro #2. Isso evita conteúdo genérico.</li>
-    </ul>
-  </div>
-
-  <!-- FOOTER -->
-  <div class="footer">
-    Criado por <span>Adriele Almeida</span> | Estrategista Digital
-  </div>
-
+    <a href="https://pay.kiwify.com.br/NfMcfXc" class="cta-btn" target="_blank">
+        Acesse o Estrategista Agora
+    </a>
 </div>
-
-<script>
-function copiar(btn, id) {
-  const texto = document.getElementById(id).innerText;
-  navigator.clipboard.writeText(texto).then(() => {
-    btn.classList.add('copiado');
-    btn.innerHTML = `
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:13px;height:13px">
-        <polyline points="20 6 9 17 4 12"/>
-      </svg>
-      Copiado!
-    `;
-    setTimeout(() => {
-      btn.classList.remove('copiado');
-      btn.innerHTML = `
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:13px;height:13px">
-          <rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/>
-        </svg>
-        Copiar
-      `;
-    }, 2500);
-  });
-}
-</script>
+```
 
 </body>
 </html>
